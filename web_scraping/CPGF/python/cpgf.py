@@ -13,7 +13,7 @@ def main(argv):
             for month in range(1,13):
                 link = 'http://arquivos.portaldatransparencia.gov.br/downloads.asp?a=' + str(year) + '&m=' + str(month).zfill(2) + '&consulta=CPGF'
                 print("Saving " + directoryBase + baseName + str(year) + str(month).zfill(2) + ".zip")		
-                urllib.request.urlretrieve(link, directoryBase + baseName + str(year) + str(month) + ".zip")
+                urllib.request.urlretrieve(link, directoryBase + baseName + str(year) + str(month).zfill(2) + ".zip")
     else:
         print("Usage: " + argv[0] + " <directory path> <base name> <start year> <end year>")
     
