@@ -1,4 +1,5 @@
 #!/bin/bash
+#Extract files and remove null binary codes
 
 fileName=$1
 fileExtracted=`unzip -Z -1 $fileName`
