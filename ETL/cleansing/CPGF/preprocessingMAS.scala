@@ -212,3 +212,4 @@ val transacoesFINAL = finalFile.map(e => transacaoCPGF(
 //transacoesFINAL.write.mode("overwrite").partitionBy("anoExtrato").parquet("CPGF/spark/transacoes")
 transacoesFINAL.write.mode("overwrite").partitionBy("anoExtrato").parquet("CPGF/spark/transacoes")
 transacoesFINAL.write.mode("overwrite").json("file:////home/gvanerven/Proj/CPGF/spark/data")
+//mongoimport -db cpgf --collection favorecidosSMA --file docs.json
